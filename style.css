@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+}
+
+.container {
+    background-image: url("./assets/bg.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.app {
+    border-radius: 20px;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: space-around;
+    background: black;
+    opacity: 0.7;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.box {
+    height: 125px;
+    width: 40px;
+    border: 3px solid #fff;
+    border-top: none;
+    display: flex;
+    flex-direction: column-reverse;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.box :first-child {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.active {
+    transform: translate(0px, -16px) scale(1.2, 1.2);
+}
+
+.actions {
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    padding: 8px 15px;
+    border-radius: 15px;
+    background-color: rgb(49, 86, 187);
+    color: white;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(14, 43, 124);
+    transform: scale(1.1, 1.1);
+}
